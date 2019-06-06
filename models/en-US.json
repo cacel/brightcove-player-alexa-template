@@ -1,0 +1,36 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "brightcove player",
+      "intents": [
+        {
+          "name": "BCOVPresentationIntent"
+        },
+        {
+          "name": "BCOVSearchPlaylistIntent"
+        },
+        {
+          "name": "BCOVSearchVideoIntent"
+        },
+        {
+          "name": "BCOVSearchRelatedIntent"
+        },
+        {
+          "name": "AMAZON.PauseIntent"
+        },
+        {
+          "name": "AMAZON.ResumeIntent"
+        },
+        {
+          "name": "AMAZON.NextIntent"
+        },
+        {
+          "name": "AMAZON.PreviousIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent"
+        }
+      ]
+    }
+  }
+}

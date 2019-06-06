@@ -1,0 +1,60 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Brightcove Player",
+          "examplePhrases": [
+            "Alexa open Brightcove player",
+            "Alexa ask Brightcove player to play a video",
+            "Alexa tell Brightcove player to play an audio"
+          ],
+          "name": "brightcove-player",
+          "description": "Brightcove Player",
+          "smallIconUri": "https://bcove-alexa.s3.amazonaws.com/skill-template-default-sm.png",
+          "largeIconUri": "https://bcove-alexa.s3.amazonaws.com/skill-template-default-lg.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special testing instructions.",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom/dist",
+          "uri": "brightcove-player"
+        },
+        "interfaces": [
+          {
+            "type": "VIDEO_APP"
+          },
+          {
+            "type": "AUDIO_PLAYER"
+          },
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          },
+          {
+            "type": "RENDER_TEMPLATE"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "http://example.com/terms",
+          "privacyPolicyUrl": "http://example.com/privacy"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
