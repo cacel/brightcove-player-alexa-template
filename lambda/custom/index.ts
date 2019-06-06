@@ -2,6 +2,8 @@
 
 import { BCOVPlayer } from 'brightcove-player-sdk-alexa';
 
+import { BCOVPlaybackServiceData } from 'brightcove-player-sdk-alexa';
+
 const playbackConfigCacel = {
     accountId: '6023583686001',
     policyKey:
@@ -9,6 +11,11 @@ const playbackConfigCacel = {
     videoId: '6040771423001',
 };
 
-const app = new BCOVPlayer(playbackConfigCacel.accountId, playbackConfigCacel.policyKey);
+const data: BCOVPlaybackServiceData = {
+    accountId: playbackConfigCacel.accountId,
+    policyKey: playbackConfigCacel.policyKey
+}
 
-export let handler = app.getLambda();
+const app = new BCOVPlayer(data);
+
+export let handler = app.getLambda();   

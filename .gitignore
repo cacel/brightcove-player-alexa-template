@@ -62,3 +62,8 @@ typings/
 
 # Dist folder
 dist/
+
+#
+# .js , .d.ts files
+lambda/custom/*.js*
+lambda/custom/*.d*

@@ -5,7 +5,7 @@
       "intents": [
         {
           "name": "BCOVPresentationIntent",
-          "samples": ["sample presentation"]
+          "samples": ["play video"]
         },
         {
           "name": "BCOVSearchPlaylistIntent",
