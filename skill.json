@@ -23,7 +23,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "sourceDir": "lambda/custom/dist",
+          "sourceDir": "lambda/dist",
           "uri": "brightcove-player"
         },
         "interfaces": [
